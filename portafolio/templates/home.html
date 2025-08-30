@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-</head>
-<body>
-    Bienvenidos a mi pagina de portafolio.
-</body>
-</html>
+{% extends 'template_base.html' %}
+
+{% block title %}
+Pagina principal
+{% endblock %}
+
+{% block content %}
+Binvenidos a mi pagina principal de mi portafolio.
+<br />
+<button class="btn btn-primary">Ir a mi portafolio</button>
+{% endblock %}
