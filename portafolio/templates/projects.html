@@ -1,0 +1,15 @@
+{% extends 'template_base.html' %}
+
+{% block title %}
+Mis proyectos
+{% endblock %}
+
+{% block content %}
+Te presento mis proyectos:
+<br>
+<ul>
+    {% for project in projects %}
+    <li>{{ project.title }} ({{ project.description }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}
